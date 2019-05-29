@@ -16,4 +16,4 @@ def index():
     return f"<h1>{app.config['STRIPE_API']}</h1>"
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000, use_reloader=False, host='0.0.0.0')
+    app.run(port=5000, use_reloader=False, host='0.0.0.0')
