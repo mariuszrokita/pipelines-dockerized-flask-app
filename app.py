@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 # Load configuration from environment variable pointing to configuration file
 app.config.from_envvar('APP_SETTINGS')
+app.config.from_ob
+
+print(environ)
+
 print(app.config['TEXT_TO_DISPLAY'])
 
 # Load config value directly from environment variable
