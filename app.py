@@ -4,8 +4,8 @@ from os import environ
 app = Flask(__name__)
 
 # Load configuration from environment variable pointing to configuration file
-app.config.from_envvar('APP_SETTINGS')
-print(app.config['TEXT_TO_DISPLAY'])
+# app.config.from_envvar('APP_SETTINGS')
+# print(app.config['TEXT_TO_DISPLAY'])
 
 # Load config value directly from environment variable
 app.config['STRIPE_API'] = environ.get('STRIPE_API_KEY')
